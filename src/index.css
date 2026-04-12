@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #9333ea;
+  --accent-bg: rgba(147, 51, 234, 0.1);
+  --accent-border: rgba(147, 51, 234, 0.4);
+}
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-white overflow-x-hidden antialiased;
+  }
+}
+
+.counter {
+  font-size: 11px;
+  padding: 6px 14px;
+  border-radius: 99px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ANIMAÇÃO DE FLUTUAR DOS BOTÕES ZAP/INSTA */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float { animation: float 3s infinite ease-in-out; }
+.animate-float-delayed { animation: float 3s infinite ease-in-out; animation-delay: 1.5s; }
+
+/* ENTRADA SUAVE DAS FOTOS */
+img {
+  animation: entrance 0.8s ease-out;
+}
+@keyframes entrance {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ESCONDE OS BOTÕES QUANDO O ADMIN ESTÁ ABERTO */
+body:has(.fixed.inset-0.z-\[100\]) .fixed.bottom-6 {
+  display: none;
+}
