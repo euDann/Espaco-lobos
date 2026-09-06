@@ -52,7 +52,7 @@ export default function App() {
     }
   };
 
-  const linkZap = `https://wa.me/5521995349442?text=${encodeURIComponent("Olá Junior, vi seu site e gostaria de um orçamento!")}`;
+  const linkZap = `https://wa.me/5521999999?text=${encodeURIComponent("Olá (nome), vi seu site e gostaria de um orçamento!")}`;
 
   return (
     <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-purple-600">
@@ -183,7 +183,7 @@ export default function App() {
 
       {/* BOTÕES FLUTUANTES */}
       <div className="fixed bottom-6 right-6 z-[60] flex flex-col gap-4">
-        <a href="https://www.instagram.com/juniorlinsjl2/" target="_blank" rel="noreferrer" className="bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-float-delayed">
+        <a href="https://www.instagram.com/(instagram)/" target="_blank" rel="noreferrer" className="bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-float-delayed">
           <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.063-2.633-.333-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.668-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" /></svg>
         </a>
         <a href={linkZap} target="_blank" rel="noreferrer" className="bg-[#25D366] p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-float">
