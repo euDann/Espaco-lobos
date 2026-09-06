@@ -116,14 +116,14 @@ export default function App() {
             onClick={handleLogoClick}
             className="text-lg md:text-xl font-black italic tracking-tighter uppercase cursor-default select-none active:scale-95 transition-transform"
           >
-            Junior Lins <span className="text-purple-600">.</span>
+            Art Studio <span className="text-purple-600">.</span>
           </h1>
           <a href={linkZap} target="_blank" rel="noreferrer" className="bg-white text-black px-5 py-2 rounded-full font-bold text-[10px] hover:bg-purple-600 hover:text-white transition-all uppercase tracking-widest">Orçamento</a>
         </div>
       </nav>
 
       <header className="pt-32 pb-12 px-6 flex flex-col items-center">
-        <div className="counter">Espaço Lobos • Belford Roxo</div>
+        <div className="counter">Art Studio • (Lugar)</div>
         <h2 className="text-5xl md:text-8xl font-black mt-4 italic uppercase leading-none tracking-tighter text-center">
           ARTE NA <br /> <span className="text-zinc-800">PELE</span>
         </h2>
